@@ -149,7 +149,7 @@ form {
   text-align: center;
 }
 
-input {
+input , label ,select{
   background-color: #eee;
   border-radius: 10px;
   border: none;
@@ -230,7 +230,8 @@ input {
 }
 
 .overlay {
-  background-image: url('../images/chemistryLogo.jpg');
+  
+  background-image: url('../images/chemistry_photo1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;

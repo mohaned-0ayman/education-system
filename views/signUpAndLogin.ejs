@@ -11,31 +11,38 @@
 <body>
   <div class="container" id="container">
 
-    <div class="form-container register-container">
+    <!-- <div class="form-container register-container"> -->
+    <div class="w-4/5 h-4/5 flex justify-center lg:px-10 flex-col space-y-6 form-container register-container">
       <form action="#">
-        <h1>Register hire.</h1>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <button>Register</button>
+        <h1>انشء حسابك الان</h1>
+        <input type="text" placeholder="الاسم الاول">
+        <input type="text" placeholder="الاسم الاخير">
+        <input type="number" name="phone" id="phone"placeholder='رقم الهاتف'>
+        <input type="number" name="parentPhone" id="parentPhone"placeholder='رقم هاتف ولى الامر'>
+        <label for="cars">اختر الصف الدراسي</label>
+        <select name="year" id="year">
+          <option value="1">الصف الاول الثانوي</option>
+          <option value="2">الصف الثاني الثانوي</option>
+          <option value="2">الصف الثالث الثانوي</option>
+        </select>
+        <input type="email" placeholder="البريد الالكتروني">
+        <input type="password" placeholder="كلمة السر">
+        <input type="password" placeholder="تاكيد كلمة السر">
+        <button>انشئ الحساب</button>
       </form>
     </div>
 
     <div class="form-container login-container">
       <form action="#">
-        <h1>Login hire.</h1>
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
+        <h1>تسجيل الدخول</h1>
+        <input type="email" placeholder="رقم الهاتف">
+        <input type="password" placeholder="كلمة السر">
         <div class="content">
-          <div class="checkbox">
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label>Remember me</label>
-          </div>
           <div class="pass-link">
-            <a href="#">Forgot password?</a>
+            <a href="#">هل نسيت كلمة المرور ؟</a>
           </div>
         </div>
-        <button>Login</button>
+        <button>تسجيل الدخول</button>
        
       </form>
     </div>
@@ -43,16 +50,16 @@
     <div class="overlay-container">
       <div class="overlay">
         <div class="overlay-panel overlay-left">
-          <h1 class="title">Hello <br> friends</h1>
-          <p>if Yout have an account, login here and have fun</p>
-          <button class="ghost" id="login">Login
+          <h1 class="title">اهلا <br> بك</h1>
+          <p>اذاكان لديك حساب قم بتسجيل الدخول</p>
+          <button class="ghost" id="login">تسجيل الدخول
             <i class="lni lni-arrow-left login"></i>
           </button>
         </div>
         <div class="overlay-panel overlay-right">
-          <h1 class="title">Start yout <br> journy now</h1>
-          <p>if you don't have an account yet, join us and start your journey.</p>
-          <button class="ghost" id="register">Register
+          <h1 class="title">ابدا<br> رحلتك الان</h1>
+          <p>اذا كان ليس لديك حساب انضم الينا  .وابدأ رحلتك الان</p>
+          <button class="ghost" id="register">أنشء حسابك الان
             <i class="lni lni-arrow-right register"></i>
           </button>
         </div>
