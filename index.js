@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Home route
 app.get("/", (req, res) => {
-  res.render("login");
+  res.render("home.ejs");
 });
 
 // Listening for incoming requests
