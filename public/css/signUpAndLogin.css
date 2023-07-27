@@ -14,7 +14,9 @@ body {
   overflow: hidden;
   height: 100vh;
 }
-
+.login-div{
+  display: flex;
+}
 h1 {
   font-weight: 700;
   letter-spacing: -1.5px;
@@ -140,7 +142,9 @@ button.ghost:hover i.login{
 
 form {
   background-color: #fff;
-  display: flex;
+  display :grid;
+  /* display :flex; */
+
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -149,12 +153,13 @@ form {
   text-align: center;
 }
 
-input , label ,select{
+input , .label ,select{
   background-color: #eee;
+  text-align: right;
   border-radius: 10px;
   border: none;
-  padding: 12px 15px;
-  margin: 8px 0;
+  padding: 12px 12px;
+  margin: 4px 0;
   width: 100%;
 }
 
@@ -191,6 +196,7 @@ input , label ,select{
   width: 50%;
   opacity: 0;
   z-index: 1;
+  grid-area:initial;
 }
 
 .container.right-panel-active .register-container {
