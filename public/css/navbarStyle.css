@@ -1,86 +1,106 @@
-.header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #dcfafc;
-
-  /* Because we want header to be sticky later */
-  height: 9.6rem;
-  padding: 0 4.8rem;
+  padding: 20px;
+  background-color: #031d29;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 
 .logo {
-  height: 150px;
-  width: 200px;
-  border-radius: 50%;
+  font-weight: bold;
+  font-size: 24px;
 }
 
-/**************************/
-/* NAVIGATION */
-/**************************/
-
-.main-nav-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 3.2rem;
-}
-
-.main-nav-link:link,
-.main-nav-link:visited {
-  display: inline-block;
+.logo a {
+  color: #ffffff;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 1.8rem;
-  transition: all 0.3s;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: #7cc0e7;
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
 }
 
-.main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited {
-  padding: 1.2rem 2.4rem;
-  border-radius: 9px;
-  color: #fff;
-  background-color: #25bdeb;
-  /* background-color: #e67e22; */
+.nav-links li {
+  list-style: none;
 }
 
-.main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active {
-  background-color: #54dff1;
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-.btn-mobile-nav {
+.auth a {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.auth a:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #239fbe;
+}
+
+.signup-btn {
+  background-color: #4899b9;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
   border: none;
-  background-color: none;
-  cursor: pointer;
-  display: none;
-}
-.icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
-  color: #333;
+  transition: all 0.3s ease;
 }
 
-.icon-mobile-nav[name="close-outline"] {
+.signup-btn:hover {
+  background-color: #5ba7ce;
+}
+.burger-menu {
   display: none;
 }
 
-/* .sticky,
-.header {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 8rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.97);
-  z-index: 999;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-} */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .auth {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+}

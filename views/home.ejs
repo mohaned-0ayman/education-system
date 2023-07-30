@@ -1,1 +1,60 @@
-<h1>Education-System</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/homeStyle.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./partials/navbar') %>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>منصة كينيج الكيمياء</h1>
+        <h2>لشرح منهج الكيمياء للصف الثالث الثانوي</h2>
+      </div>
+    </section>
+    <section class="chemistry">
+      <div class="chemistry-text">
+        <h2>أقوي شرح لمادة الكيمياء + حل جميع الملخصات = تقفيل المادة</h2>
+        <a href="#" class="subscribe-btn">أشترك الآن</a>
+      </div>
+    </section>
+    <section class="courses">
+      <h2>الكورسات المتاحة</h2>
+      <div class="course-container">
+        <div class="course">
+          <img src="https://example.com/path/to/course1.jpg" alt="Course 1" />
+          <div class="course-details">
+            <h3>اسم الكورس 1</h3>
+            <p>السعر: 100 جنيه</p>
+            <a href="#">اذهب الي الكورس</a>
+          </div>
+        </div>
+        <div class="course">
+          <img src="https://example.com/path/to/course2.jpg" alt="Course 2" />
+          <div class="course-details">
+            <h3>اسم الكورس 2</h3>
+            <p>السعر: 150 جنيه</p>
+            <a href="#">اذهب الي الكورس</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="social-icons">
+        <a href="#"><i class="fas fa-youtube"></i></a>
+        <a href="#"><i class="fas fa-facebook"></i></a>
+      </div>
+      <div class="developer-info">
+        <p><span>Developed By:</span> software club</p>
+        <p><span>All Copy Rights Reserved @2023</span></p>
+      </div>
+    </footer>
+  </body>
+</html>

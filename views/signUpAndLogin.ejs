@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Registration Form</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/signUpAndLogin.css" />
+  </head>
+  <%- include('./partials/navbar') %>
+
+  <body>
+    <div class="container" id="container">
+      <div class="form-container register-container">
+        <form action="#">
+          <h1>انشء حسابك الان</h1>
+
+          <div class="login-div">
+            <input type="text" placeholder="الاسم الاخير" />
+            <input type="text" placeholder="الاسم الاول" />
+          </div>
+          <div class="login-div">
+            <input
+              type="number"
+              name="parentPhone"
+              id="parentPhone"
+              placeholder="رقم هاتف ولى الامر"
+            />
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="رقم الهاتف"
+            />
+          </div>
+          <div class="login-div">
+            <select name="year" id="year">
+              <option value="1">الصف الاول الثانوي</option>
+              <option value="2">الصف الثاني الثانوي</option>
+              <option value="2">الصف الثالث الثانوي</option>
+            </select>
+            <label for="year" class="label">اختر الصف الدراسي</label>
+          </div>
+          <input type="email" placeholder="البريد الالكتروني" />
+          <input type="password" placeholder="كلمة السر" />
+          <input type="password" placeholder="تاكيد كلمة السر" />
+          <button>انشئ الحساب</button>
+        </form>
+      </div>
+
+      <div class="form-container login-container">
+        <form action="#">
+          <h1>تسجيل الدخول</h1>
+          <input type="email" placeholder="رقم الهاتف" />
+          <input type="password" placeholder="كلمة السر" />
+          <div class="content">
+            <div class="pass-link">
+              <a href="#">هل نسيت كلمة المرور ؟</a>
+            </div>
+          </div>
+          <button>تسجيل الدخول</button>
+        </form>
+      </div>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1 class="title">
+              اهلا <br />
+              بك
+            </h1>
+            <p>اذاكان لديك حساب قم بتسجيل الدخول</p>
+            <button class="ghost" id="login">
+              تسجيل الدخول
+              <i class="lni lni-arrow-left login"></i>
+            </button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1 class="title">
+              ابدا<br />
+              رحلتك الان
+            </h1>
+            <p>اذا كان ليس لديك حساب انضم الينا .وابدأ رحلتك الان</p>
+            <button class="ghost" id="register">
+              أنشء حسابك الان
+              <i class="lni lni-arrow-right register"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/signUpAndLogin.js"></script>
+  </body>
+</html>
